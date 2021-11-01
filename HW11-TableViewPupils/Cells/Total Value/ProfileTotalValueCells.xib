@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="165" id="KGk-i7-Jjw" customClass="ProfileTotalValueCells" customModule="HW11_TableViewPupils" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="451" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmS-sb-T8M">
+                        <rect key="frame" x="0.0" y="4" width="451" height="161"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="GvY-cs-HgC">
+                                <rect key="frame" x="20" y="5" width="421" height="151"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of pupils" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkT-LG-QNp">
+                                        <rect key="frame" x="0.0" y="0.0" width="421" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2Z-RJ-asi">
+                                        <rect key="frame" x="0.0" y="50" width="421" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of classes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ih7-h8-qRp">
+                                        <rect key="frame" x="0.0" y="100" width="421" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GvY-cs-HgC" secondAttribute="trailing" constant="10" id="U2B-vh-W55"/>
+                            <constraint firstAttribute="bottom" secondItem="GvY-cs-HgC" secondAttribute="bottom" constant="5" id="XsG-8C-Qhk"/>
+                            <constraint firstItem="GvY-cs-HgC" firstAttribute="top" secondItem="gmS-sb-T8M" secondAttribute="top" constant="5" id="s9O-nd-LyI"/>
+                            <constraint firstItem="GvY-cs-HgC" firstAttribute="leading" secondItem="gmS-sb-T8M" secondAttribute="leading" constant="20" id="yaz-uD-V77"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gmS-sb-T8M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="3UP-Ea-Oal"/>
+                    <constraint firstItem="gmS-sb-T8M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LEj-we-5JD"/>
+                    <constraint firstAttribute="bottom" secondItem="gmS-sb-T8M" secondAttribute="bottom" id="qpo-bV-tKu"/>
+                    <constraint firstAttribute="trailing" secondItem="gmS-sb-T8M" secondAttribute="trailing" id="snR-zJ-8py"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="averageScoreLabel" destination="m2Z-RJ-asi" id="lew-kA-Ldm"/>
+                <outlet property="numberOfClassesLabel" destination="Ih7-h8-qRp" id="lHe-Um-nOf"/>
+                <outlet property="numberOfPupilsLabel" destination="hkT-LG-QNp" id="1Wf-6f-bN4"/>
+                <outlet property="totalValueCellView" destination="gmS-sb-T8M" id="O6S-eP-J91"/>
+            </connections>
+            <point key="canvasLocation" x="42.753623188405797" y="140.29017857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
